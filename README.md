@@ -9,18 +9,18 @@ PfamFold is a Python-based workflow for analyzing structural variability within 
 - Performs clustering of domain structures using FoldSeek and agglomerative clustering.
 - Generates TM-score matrices and outputs clustered domain representatives for further analysis.
 
-## Requirements
+## Conda environment
 
-The dependencies for this project are managed via Conda. The required environment can be set up using the included `environment.yml` file.
-
-### Setting up the environment
-
-Run the following commands to create and activate the Conda environment:
+The dependencies for this project are managed via Conda. Run the following commands to create and activate the Conda environment:
 
 ```bash
 conda env create -f environment.yml
 conda activate pfamfold
 ```
+
+## Input Data
+
+The workflow requires input data, including AlphaFold2-predicted protein structures, domain annotations, and secondary structure predictions. Detailed instructions for downloading and preparing the input data can be found in the [Input Data Preparation Guide](input/input_data.md).
 
 ## Usage
 
@@ -48,6 +48,7 @@ The workflow requires an `input/` directory structured as follows:
 Each of the directories must include subdirectories for each genome being analyzed. For example, if analyzing multiple genomes, each genome should have its own subdirectory within `pdb/`, `selres/`, and `stride/`, containing the relevant files for that genome.
 
 ### Output:
+
 - Structural features (e.g., pLDDT scores, secondary structure classifications).
 - Clustered domain representatives.
 - TM-score matrices for structural comparisons.
@@ -63,7 +64,7 @@ Each of the directories must include subdirectories for each genome being analyz
 
 ## Contributing
 
-Contributions and suggestions are welcome. Feel free to submit issues or pull requests to improve the project.
+Suggestions and issues are welcome. Feel free to submit issues or pull requests.
 
 ## License
 
