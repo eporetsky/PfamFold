@@ -2,6 +2,16 @@
 
 This document provides instructions on how to download and prepare the input data required for the workflow. The data includes AlphaFold2-predicted protein structures, which are processed and analyzed in the pipeline.
 
+## Download links
+
+While you can find detailed explanation on how to generate the input data to run your own analysis in the following sections, we have also provided download links in the table below for the PDB files, the extracted Pfam domain structures (selres), and the STRIDE secondary structure predictions.
+
+| File | Link |
+| ------------- | ------------- |
+| PDB    |  https://www.dropbox.com/scl/fi/fm2esunz0k9f29nf3d0jv/pdb.zip?rlkey=uj1y1al9k8toc439qkox8qkfw&st=nl029p0c&dl=0 |
+| Selres | https://www.dropbox.com/scl/fi/pko3lb95mw5yuoeaecsuh/selres.zip?rlkey=6bzfdbq5pj3l9jx5ur77n6jca&st=qbr6z392&dl=0 |
+| STRIDE | https://www.dropbox.com/scl/fi/e41rshq5dcis1rjvwdbh9/stride.zip?rlkey=hqsbqi4fcf31fnwpdy2tu283a&st=xxwizgr4&dl=0 |
+
 ## Conda environment
 
 The dependencies for this project are managed via Conda. Run the following commands to create and activate the Conda environment:
